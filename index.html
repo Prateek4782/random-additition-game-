@@ -8,15 +8,36 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <h1>Random addition problems</h1>
-        <h4>This is a simple random additions application to practice</h4>
-        <input class="num1" type="text" value="0" id="num1" > +
-        <input class="num1" type="text" value="0" id="num2" >
-        <input type="text"  id="sum">
-        <button id="btn" onclick="add()">Submit the answers</button>
-        <h2 id="result"></h2>
+    <div class="application">
+        <div class="container">
+            <h1>Random addition problems</h1>
+            <h4>This is a simple random additions application to practice</h4>
+            <input class="num1" type="text" value="0" id="num1" > +
+            <input class="num1" type="text" value="0" id="num2" >
+            <input type="text" placeholder="Enter your answers"  id="sum">
+            <button id="btn" onclick="add()">Submit the answers</button>
+            <h2 id="result"></h2>
+        </div>
+        <div class="score">
+            <h2>Score card</h2>
+            <div class="score-content">
+                <div class="score-panel card-grow">
+                    <p>Total Questions</p>
+                    <h1 id="total">0</h1>
+                </div>
+                <div class="score-panel ml card-grow mb"> 
+                    <p>Correct Answers</p>
+                    <h1 id="correct">0</h1>
+                </div>
+            </div>
+            <div class="score-panel w-100">
+                <p>Score</p>
+                <h1 id="score">0</h1>
+                <p><span id="correctPercentage"></span> % correct attempts</p>
+            </div> 
+        </div> 
     </div>
+    
     <script src="app.js"></script>
 </body>
 </html>
